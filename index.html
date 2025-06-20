@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Screen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- World Clocks -->
+        <div class="clocks-container">
+            <div class="clock-card" data-location="Seoul, South Korea" data-timezone="Asia/Seoul">
+                <div class="city">Seoul</div>
+                <div class="time">--:--:--</div>
+                <div class="date">--/--/----</div>
+            </div>
+            <div class="clock-card" data-location="Barcelona, Spain" data-timezone="Europe/Madrid">
+                <div class="city">Barcelona</div>
+                <div class="time">--:--:--</div>
+                <div class="date">--/--/----</div>
+            </div>
+            <div class="clock-card" data-location="Moshi, Tanzania" data-timezone="Africa/Dar_es_Salaam">
+                <div class="city">Moshi</div>
+                <div class="time">--:--:--</div>
+                <div class="date">--/--/----</div>
+            </div>
+            <div class="clock-card" data-location="Ho Chi Minh, Vietnam" data-timezone="Asia/Ho_Chi_Minh">
+                <div class="city">Ho Chi Minh</div>
+                <div class="time">--:--:--</div>
+                <div class="date">--/--/----</div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Widget Screen</h1>
+                <div class="glow"></div>
+            </div>
+        
+        <div class="converter-box">
+            <h2>🌡️ Temperature</h2>
+            <div class="input-group">
+                <input type="number" id="temp-input" placeholder="Enter value" class="futuristic-input">
+                <div class="select-wrapper">
+                    <select id="temp-from" class="futuristic-select">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                </div>
+                <span class="equals">=</span>
+                <div class="result" id="temp-result">0.00</div>
+                <div class="select-wrapper">
+                    <select id="temp-to" class="futuristic-select">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="converter-box">
+            <h2>📏 Length</h2>
+            <div class="input-group">
+                <input type="number" id="length-input" placeholder="Enter value" class="futuristic-input">
+                <div class="select-wrapper">
+                    <select id="length-from" class="futuristic-select">
+                        <option value="cm">Centimeters</option>
+                        <option value="inches">Inches</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                </div>
+                <span class="equals">=</span>
+                <div class="result" id="length-result">0.00</div>
+                <div class="select-wrapper">
+                    <select id="length-to" class="futuristic-select">
+                        <option value="inches">Inches</option>
+                        <option value="cm">Centimeters</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="converter-box">
+            <h2>⚖️ Weight</h2>
+            <div class="input-group">
+                <input type="number" id="weight-input" placeholder="Enter value" class="futuristic-input">
+                <div class="select-wrapper">
+                    <select id="weight-from" class="futuristic-select">
+                        <option value="kg">Kilograms</option>
+                        <option value="pounds">Pounds</option>
+                    </select>
+                </div>
+                <span class="equals">=</span>
+                <div class="result" id="weight-result">0.00</div>
+                <div class="select-wrapper">
+                    <select id="weight-to" class="futuristic-select">
+                        <option value="pounds">Pounds</option>
+                        <option value="kg">Kilograms</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="particles" id="particles-js"></div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
